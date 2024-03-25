@@ -1,11 +1,12 @@
-import Workstation from "@/components/Workstation";
+import Workstation from "@/Pages/Workstation/Workstation";
 import Footer from "@/components/footer";
-import Image from "next/image";
+import SidebarLayout from "@/layout/sidebar";
 
 export default function Home() {
   return (
 <>
-    <main>
+    <main className="flex-1">
+      <SidebarLayout />
       <Workstation />
     </main>
     <footer>
