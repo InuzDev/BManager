@@ -8,5 +8,3 @@ const Workstation = () => {
       </>
    )
 }
-
-export default Workstation

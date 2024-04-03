@@ -1,9 +1,8 @@
 "use client"
-import Workstation from "@/app/Workspace/page";
 import HeadPage from "@/components/header";
 import Link from "next/link";
 // import { useRouter } from "next/navigation";
-import React from "react";
+import React, { Children } from "react";
 
 const SidebarItems = [
    {
@@ -20,7 +19,7 @@ const SidebarItems = [
    }
 ]
 
-const SidebarLayout = () => {
+const SidebarLayout = ({children,}: {children: React.ReactNode}) => {
    return (
       <>
          <div className="min-h-screen flex flex-col">
@@ -41,7 +40,7 @@ const SidebarLayout = () => {
                   </nav>
                </aside>
                <main className="container place-content-center">
-                  <Workstation/>
+                  {children}
                </main>
             </div>
          </div>
