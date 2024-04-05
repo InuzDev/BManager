@@ -10,8 +10,8 @@ const SidebarItems = [
       title: 'Home'
    },
    {
-      href: '/about',
-      title: 'About'
+      href: '/Workspaces',
+      title: 'Workspaces'
    },
    {
       href: '/Projects',
