@@ -1,4 +1,6 @@
-const Workstation = () => {
+import * as react from 'react'
+
+export default function Workstation () {
    return (
       <>
       <div>
