@@ -1,6 +1,6 @@
-import * as react from 'react'
+import React from 'react';
 
-export default function Workstation () {
+export default function Workspace () {
    return (
       <>
       <div>

@@ -10,8 +10,8 @@ const SidebarItems = [
       title: 'Home'
    },
    {
-      href: '/about',
-      title: 'About'
+      href: '/Workspaces',
+      title: 'Workspaces'
    },
    {
       href: '/Projects',
@@ -31,7 +31,7 @@ const SidebarLayout = ({children,}: {children: React.ReactNode}) => {
                      <ul>
                         {SidebarItems.map(({href, title}) => (
                            <li className="m-2" key={title}>
-                              <Link className={`flex p-2 bg-neutral-600 rounded hover:bg-neutral-700 cursor-pointer`} href={href}>
+                              <Link className={`flex p-2 bg-neutral-600 rounded-lg hover:bg-neutral-700 cursor-pointer`} href={href}>
                                  {title}
                               </Link>
                            </li>
